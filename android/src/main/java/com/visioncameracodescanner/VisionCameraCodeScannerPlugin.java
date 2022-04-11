@@ -2,6 +2,7 @@ package com.visioncameracodescanner;
 
 import static com.visioncameracodescanner.BarcodeConverter.convertToArray;
 import static com.visioncameracodescanner.BarcodeConverter.convertToMap;
+import static com.visioncameracodescanner.BarcodeConverter.convertToBinaryArray;
 
 import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
