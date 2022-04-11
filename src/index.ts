@@ -237,6 +237,7 @@ export type Barcode = {
   displayValue?: string;
   rawValue?: string;
   format: BarcodeFormat;
+  binary: string[];
   content:
     | {
         type:
