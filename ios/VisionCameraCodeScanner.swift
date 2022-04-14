@@ -101,7 +101,8 @@ class VisionCameraCodeScanner: NSObject, FrameProcessorPluginBase {
     
     static func convertBarcode(barcode: Barcode) -> Any {
         var map: [String: Any] = [:]
-        
+
+        map["base64encoded"] = barcode.rawData?.base64EncodedString()        
         map["cornerPoints"] = BarcodeConverter.convertToArray(points: barcode.cornerPoints as? [CGPoint])
         map["displayValue"] = barcode.displayValue
         map["rawValue"] = barcode.rawValue
